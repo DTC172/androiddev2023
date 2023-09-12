@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="weather_info">Party Cloud\n20C-30C</string>
+    <string name="monday">Mon</string>
+    <string name="des">sun_cloud</string>
+    <string name="tueday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thusday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="weather_text">20C \n Cloudy</string>
+    <string name="location">Location</string>
+</resources>

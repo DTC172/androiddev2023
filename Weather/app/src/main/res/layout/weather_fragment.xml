@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/weatherImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame_9"
+
+        />
+
+    <FrameLayout
+        android:layout_width="286dp"
+        android:layout_height="179dp"
+        android:layout_gravity="center|center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="276dp"
+            android:layout_height="179dp"
+            android:layout_gravity="center|top"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cloud_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:text="@string/weather_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:text="@string/location"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+
+</FrameLayout>
+
