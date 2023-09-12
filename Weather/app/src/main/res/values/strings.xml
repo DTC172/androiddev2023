@@ -10,4 +10,6 @@
     <string name="saturday">Sat</string>
     <string name="weather_text">20C \n Cloudy</string>
     <string name="location">Location</string>
+    <string name="search">Search</string>
+    <string name="refresh">Refresh</string>
 </resources>
