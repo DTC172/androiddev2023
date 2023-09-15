@@ -1,6 +1,8 @@
 package vn.edu.usth.weather;
 
+
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -9,6 +11,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -68,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "search is Collapse", Toast.LENGTH_SHORT).show();
                 return true;
             }
+
         };
 
         menu.findItem(R.id.search).setOnActionExpandListener(onActionExpandListener);
@@ -76,11 +80,12 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    //Task14
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.refresh) {
-            Toast.makeText(this, "Refreshing", Toast.LENGTH_SHORT).show();
-            return true;
+            NetworkRequestTask networkRequestTask = new NetworkRequestTask(MainActivity.this);
+            networkRequestTask.execute();
         }
 
         return super.onOptionsItemSelected(item);
